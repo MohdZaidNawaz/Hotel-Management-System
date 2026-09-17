@@ -1,0 +1,32 @@
+<dialog class="modal" id="booking-modal" aria-labelledby="booking-title">
+  <button class="modal-close" type="button" data-close-modal aria-label="Close"><svg><use href="#icon-close"></use></svg></button>
+  <div class="modal-layout">
+    <aside class="booking-summary">
+      <p class="eyebrow light">Your stay</p>
+      <h2 id="summary-room">Ocean Atelier</h2>
+      <div class="summary-dates"><div><span>Check in</span><strong id="summary-in">—</strong></div><div><span>Check out</span><strong id="summary-out">—</strong></div></div>
+      <div class="price-breakdown">
+        <div><span id="summary-rate-label">Room × nights</span><span id="summary-subtotal">₹0</span></div>
+        <div><span>Taxes & service</span><span id="summary-taxes">₹0</span></div>
+        <div class="price-total"><span>Total</span><strong id="summary-total">₹0</strong></div>
+      </div>
+      <p class="summary-note"><svg><use href="#icon-shield"></use></svg> No payment required today. Our team will contact you securely to arrange your deposit.</p>
+    </aside>
+    <form class="guest-form" id="reservation-form">
+      <p class="eyebrow">One last step</p>
+      <h2 id="booking-title">Who’s checking in?</h2>
+      <p class="form-intro">Your confirmation will be sent to the email below.</p>
+      <input type="hidden" name="room_code" id="booking-room-code">
+      <div class="field-row">
+        <label><span>First name</span><input name="first_name" autocomplete="given-name" required></label>
+        <label><span>Last name</span><input name="last_name" autocomplete="family-name" required></label>
+      </div>
+      <label><span>Email address</span><input name="email" type="email" autocomplete="email" required></label>
+      <label><span>Phone number</span><input name="phone" type="tel" autocomplete="tel" placeholder="+91 98765 43210" required></label>
+      <label><span>Anything we should know? <em>Optional</em></span><textarea name="special_requests" rows="3" placeholder="Celebrations, arrival time, dietary preferences…"></textarea></label>
+      <label class="checkbox"><input type="checkbox" required><span>I agree to the booking and cancellation terms.</span></label>
+      <p class="form-error" id="reservation-error" role="alert"></p>
+      <button class="button button-coral button-wide" type="submit"><span>Confirm reservation</span><svg><use href="#icon-arrow"></use></svg></button>
+    </form>
+  </div>
+</dialog>

@@ -1,0 +1,23 @@
+.hero {
+  position: relative;
+  display: flex;
+  min-height: 790px;
+  height: min(92vh, 950px);
+  color: #fff;
+  background: url("../images/solara-hero.png") center center / cover no-repeat;
+  overflow: hidden;
+}
+.hero::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,19,27,.14), rgba(5,19,27,.12) 45%, rgba(5,19,27,.56)); }
+.hero-shade { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(4,19,26,.7) 0%, rgba(4,19,26,.3) 42%, transparent 68%); }
+.hero-content { position: relative; z-index: 2; align-self: center; margin: 55px 0 0 clamp(28px, 9vw, 150px); max-width: 660px; }
+.hero-copy { max-width: 470px; margin: 32px 0 28px; color: rgba(255,255,255,.84); font-size: 1.04rem; }
+.hero-meta { position: absolute; z-index: 2; right: clamp(25px,4vw,65px); bottom: 35px; display: flex; gap: 25px; color: rgba(255,255,255,.67); font-size: .62rem; letter-spacing: .14em; }
+
+.booking-bar-wrap { position: relative; z-index: 5; width: min(1180px, calc(100% - 48px)); margin: -49px auto 0; scroll-margin-top: 30px; }
+.booking-bar { min-height: 98px; display: grid; grid-template-columns: 1fr 1fr .8fr auto; background: var(--paper); box-shadow: var(--shadow); }
+.booking-field { display: flex; flex-direction: column; justify-content: center; padding: 20px 30px; border-right: 1px solid var(--line); }
+.booking-field > span:first-child, .guest-form label > span, .manage-content label > span { margin-bottom: 5px; color: var(--muted); font-size: .59rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+.input-shell { display: flex; align-items: center; gap: 12px; }
+.input-shell svg { flex: 0 0 auto; width: 16px; color: var(--coral); }
+.booking-field input, .booking-field select { min-width: 0; width: 100%; border: 0; outline: 0; background: transparent; color: var(--ink); font-family: var(--serif); font-size: .98rem; cursor: pointer; }
+.availability-button { min-width: 235px; min-height: 98px; }

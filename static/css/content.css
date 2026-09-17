@@ -1,0 +1,38 @@
+.intro { display: grid; grid-template-columns: .85fr 1.15fr; gap: 10vw; padding-top: 155px; padding-bottom: 140px; }
+.intro-copy { padding-top: 23px; max-width: 590px; }
+.intro-copy > p { margin: 0; font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.55; }
+.signature { margin-top: 44px; color: var(--coral); font-family: var(--serif); font-style: italic; font-size: 1.35rem; }
+.signature span { margin-left: 12px; color: var(--muted); font-family: var(--sans); font-size: .54rem; font-style: normal; letter-spacing: .18em; text-transform: uppercase; }
+
+.experience { display: grid; grid-template-columns: 1.1fr .9fr; min-height: 790px; background: var(--ink); color: #fff; }
+.experience-image { background: linear-gradient(180deg, transparent, rgba(10,27,26,.25)), url("../images/solara-hero.png") 41% center / auto 115% no-repeat; }
+.experience-panel { display: flex; flex-direction: column; justify-content: center; padding: 80px clamp(40px, 7vw, 110px); }
+.experience-panel h2 { max-width: 500px; }
+.experience-panel > p:not(.eyebrow) { margin: 35px 0 45px; color: rgba(255,255,255,.67); font-size: .9rem; }
+.experience-points { border-top: 1px solid rgba(255,255,255,.15); }
+.experience-points > div { display: grid; grid-template-columns: 42px 1fr; gap: 15px; padding: 18px 0; border-bottom: 1px solid rgba(255,255,255,.15); }
+.experience-points span { color: var(--coral); font-family: var(--serif); font-size: .85rem; }
+.experience-points p { margin: 0; color: rgba(255,255,255,.6); font-size: .73rem; }
+.experience-points strong { display: block; margin-bottom: 2px; color: #fff; font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; }
+
+.quote { padding-top: 150px; padding-bottom: 150px; text-align: center; background: var(--cream); }
+.quote-mark { height: 60px; color: var(--coral); font-family: var(--serif); font-size: 6rem; line-height: .9; }
+blockquote { max-width: 930px; margin: 28px auto 35px; font-size: clamp(2rem, 3.5vw, 3.7rem); line-height: 1.2; letter-spacing: -.025em; }
+.quote > p { margin: 0; font-size: .66rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.quote > p span { margin-left: 10px; color: var(--muted); font-weight: 400; }
+
+.details { display: grid; grid-template-columns: 1.18fr .82fr; padding-bottom: 130px; }
+.details-card { padding: 75px clamp(35px, 6vw, 90px); background: var(--paper); }
+.details-card h2 { max-width: 450px; }
+.detail-list { margin-top: 55px; border-top: 1px solid var(--line); }
+.detail-list > div { display: grid; grid-template-columns: 120px 1fr; padding: 18px 0; border-bottom: 1px solid var(--line); }
+.detail-list span { padding-top: 3px; color: var(--coral); font-size: .6rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.detail-list p { margin: 0; font-family: var(--serif); font-size: 1.05rem; line-height: 1.5; }
+.newsletter { display: flex; flex-direction: column; justify-content: center; padding: 75px clamp(35px, 5vw, 75px); color: #fff; background: var(--coral); }
+.newsletter .eyebrow { color: #ffe5da; }
+.newsletter h2 { font-size: clamp(2.7rem, 4vw, 4.4rem); }
+.newsletter > p:not(.eyebrow) { max-width: 400px; margin: 27px 0; color: rgba(255,255,255,.75); font-size: .85rem; }
+.newsletter-form { display: flex; border-bottom: 1px solid rgba(255,255,255,.6); }
+.newsletter-form input { flex: 1; min-width: 0; padding: 14px 0; color: #fff; background: transparent; border: 0; outline: 0; }
+.newsletter-form input::placeholder { color: rgba(255,255,255,.7); }
+.newsletter-form button { width: 48px; color: #fff; background: transparent; border: 0; cursor: pointer; }

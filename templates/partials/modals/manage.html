@@ -1,0 +1,15 @@
+<dialog class="modal modal-small" id="manage-modal" aria-labelledby="manage-title">
+  <button class="modal-close" type="button" data-close-modal aria-label="Close"><svg><use href="#icon-close"></use></svg></button>
+  <div class="manage-content">
+    <p class="eyebrow">Your reservation</p>
+    <h2 id="manage-title">Manage your stay.</h2>
+    <p>Use the details from your confirmation to view or cancel a reservation.</p>
+    <form id="lookup-form">
+      <label><span>Confirmation code</span><input name="confirmation" placeholder="SOL-ABC123" maxlength="10" required></label>
+      <label><span>Booking email</span><input name="email" type="email" autocomplete="email" required></label>
+      <p class="form-error" id="lookup-error" role="alert"></p>
+      <button class="button button-dark button-wide" type="submit">Find reservation</button>
+    </form>
+    <div id="managed-booking" class="managed-booking" hidden></div>
+  </div>
+</dialog>

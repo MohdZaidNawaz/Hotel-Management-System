@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+solara.db
+.pytest_cache/
+instance/
+tests/.tmp/
+.solara-test-*.db

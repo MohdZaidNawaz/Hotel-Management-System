@@ -1,0 +1,32 @@
+<section class="stays section-pad" id="stays">
+  <div class="section-heading reveal">
+    <div>
+      <p class="eyebrow">Stay your way</p>
+      <h2>Rooms with room to breathe.</h2>
+    </div>
+    <p>Three distinct ways to stay, each with breakfast, unhurried checkout, and the sea never far away.</p>
+  </div>
+
+  <div class="room-grid" id="room-grid">
+    {% for room in rooms %}
+    <article class="room-card reveal" data-room-code="{{ room['code'] }}">
+      <div class="room-image room-image--{{ room['image_variant'] }}">
+        {% if loop.first %}<span class="room-badge">Guest favorite</span>{% endif %}
+        <span class="room-number">0{{ loop.index }}</span>
+      </div>
+      <div class="room-content">
+        <div class="room-title-row">
+          <h3>{{ room['name'] }}</h3>
+          <p><span>₹{{ "{:,.0f}".format(room['nightly_rate']) }}</span> / night</p>
+        </div>
+        <p>{{ room['description'] }}</p>
+        <div class="room-meta">
+          <span><svg><use href="#icon-users"></use></svg> Up to {{ room['capacity'] }}</span>
+          <span><svg><use href="#icon-bed"></use></svg> {{ room['beds'] }} king {% if room['beds'] > 1 %}beds{% else %}bed{% endif %}</span>
+        </div>
+        <button class="link-arrow room-check" type="button" data-room="{{ room['code'] }}">Check availability <svg><use href="#icon-arrow"></use></svg></button>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
